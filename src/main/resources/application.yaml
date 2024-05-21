@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${db_host}/flash_cards
+    username: ${db_username}
+    password: ${db_password}
+
+logging:
+  level:
+    root: INFO
+
+
+security:
+  cors:
+    allowedMethods: OPTIONS,GET,POST,PUT,PATCH
+    allowedHeaders: Content-Type,withcredentials,Authorization,X-CSRF-TOKEN,Accept
+    allowedOrigins: ${cors_urls}
+    allowCredentials: false
+    maxAge: 8000
+    path: /**
