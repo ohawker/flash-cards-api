@@ -1,0 +1,10 @@
+debug: true
+
+security:
+  cors:
+    allowedMethods: OPTIONS,GET,POST,PUT,DELETE
+    allowedHeaders: Content-Type,withcredentials,Authorization,X-CSRF-TOKEN
+    allowedOrigins: http://localhost:3000
+    allowCredentials: false
+    maxAge: 8000
+    path: /**

@@ -26,7 +26,7 @@ class CardMapper {
             translation = entity.translation,
             targetLanguage = entity.targetLanguage,
             tries = entity.tries,
-            correctAnswers = entity.correctAnswers
+            correctAnswers = entity.correctAnswers,
         )
     }
 }
